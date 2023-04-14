@@ -48,6 +48,7 @@ h3{
     transition: 1s;
     padding: 10px;
     backdrop-filter: blur(5px) ;
+    cursor: pointer;
 }
 
 .titulo:hover{
@@ -107,7 +108,7 @@ h3{
     align-items: center;
 }
 
-#textoEncriptado{
+#textoEncriptado, #textoDesencriptado{
     width: 90%;
     height: 300px;
     display: block;
@@ -117,34 +118,25 @@ h3{
     background: #ffffff82;
     padding: 10px;
     font-size: 35px;
-}
-
-#textoDesencriptado{
-    width: 90%;
-    height: 300px;
-    display: block;
-    margin: 20px 0 40px 45px;
-    border-radius: 10px 0;
-    border: none;
-    background: #ffffff82;
-    padding: 10px;
-    font-size: 35px;
+    resize: none;
 }
 
 button{
-    box-shadow: 0 0 5px rgb(0, 255, 174), 0 0 25px rgb(0, 255, 174);
+    box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0);
     transition: 1s;
     margin: 0 100px;
     padding: 10px 15px;
     border-radius: 10px;
     border: none;
-    background: rgb(0, 255, 174);
+    background: rgb(0, 0, 0);
     font-size: 1.1em;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    cursor: pointer;
 }
 
 button:hover{
-    box-shadow: 0 0 5px rgb(0, 255, 174), 0 0 25px rgb(0, 255, 174), 0 0 50px rgb(0, 255, 174), 0 0 100px rgb(0, 255, 174), 0 0 200px rgb(0, 255, 174);
+    box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0), 0 0 50px rgb(0, 0, 0), 0 0 100px rgb(0, 0, 0), 0 0 200px rgb(0, 0, 0);
     transform: scale(1.2);
 }
 @media screen and (max-width: 480px){
@@ -182,7 +174,7 @@ button:hover{
     #textoDesencriptado{
         margin-top: 10%;
     }
-
+   
     .botones{
         display: flex;
         font-size: 30px;
