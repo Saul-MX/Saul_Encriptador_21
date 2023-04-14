@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="navegacion">
+            <header>
+                <h1 class="titulo">Encrypted message &#128518;</h1>
+                <nav>
+                    <a href="https://instagram.com/saul_dom21?igshid=YmMyMTA2M2Y=" class="encabezado">@saul_dom21</a>
+                </nav>
+            </header>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <br>
+                <h3>NO USAR ACENTOS &#128064;</h3>
+                <textarea type="text" id="textoEncriptado" cols="30" rows="10" placeholder="Ingresa texto..."></textarea>
+                <textarea name="resultado" id="textoDesencriptado" cols="30" rows="10" placeholder="Resultado..."></textarea>
+            </div>
+        <div class="botones"> 
+            <button type="button" id="botonEncriptado">Encriptar</button>
+            <button type="button" id="botonDesencriptar">Desencriptar</button>
+            <button type="button" id="botonCopiar">Copiar</button>
+        </div>   
+        </div>
+    </main>
+</body>
+
+<script>
+
+var btn = document.querySelector("#botonEncriptado");
+btn.onclick = encriptar;
+
+var btn2 = document.querySelector("#botonDesencriptar");
+btn2.onclick = desencriptar;
+
+var btn3 = document.querySelector("#botonCopiar");
+btn3.onclick = copiar;
+
+</script>
+</html>

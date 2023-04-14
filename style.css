@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(fondo1.jpg);
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+h3{
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background:  #ffffff82;
+}
+
+.titulo{
+    font-size: 2em;
+    position: relative;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 1s;
+    padding: 10px;
+    backdrop-filter: blur(5px) ;
+}
+
+.titulo:hover{
+    transform: translateY(20px) scale(1.1);
+}
+
+.navegacion{
+    width: 980px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.encabezado{
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 1s;
+}
+
+
+.encabezado::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ffffffc6;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.encabezado:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.cards{
+    width: 100%;
+    height: 800px;
+    border-radius: 5px 40px 5px 40px;
+    text-align: center;
+    margin-top: 50px;
+    backdrop-filter: blur(10px);
+    
+}
+
+.card{
+    width: 980px;
+    text-align: center;
+    align-items: center;
+}
+
+#textoEncriptado{
+    width: 90%;
+    height: 300px;
+    display: block;
+    margin: 20px 0 40px 45px;
+    border-radius: 0 10px;
+    border: none;
+    background: #ffffff82;
+    padding: 10px;
+    font-size: 35px;
+}
+
+#textoDesencriptado{
+    width: 90%;
+    height: 300px;
+    display: block;
+    margin: 20px 0 40px 45px;
+    border-radius: 10px 0;
+    border: none;
+    background: #ffffff82;
+    padding: 10px;
+    font-size: 35px;
+}
+
+button{
+    box-shadow: 0 0 5px rgb(0, 255, 174), 0 0 25px rgb(0, 255, 174);
+    transition: 1s;
+    margin: 0 100px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(0, 255, 174);
+    font-size: 1.1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover{
+    box-shadow: 0 0 5px rgb(0, 255, 174), 0 0 25px rgb(0, 255, 174), 0 0 50px rgb(0, 255, 174), 0 0 100px rgb(0, 255, 174), 0 0 200px rgb(0, 255, 174);
+    transform: scale(1.2);
+}
+@media screen and (max-width: 480px){
+    body{
+        background: url(fondo2.jpg);
+    }
+
+    .titulo{
+        font-size: 60px;
+    }
+
+    header{
+        font-size: 30px;
+    }
+
+    .cards{
+        width: 93%;
+        height: 1560px;
+        margin-left: 35%;
+        margin-bottom: 10%;
+        margin-top: 20%;
+    }
+
+    h3{
+        margin-top: 25px;
+        font-size: 50px;
+    }
+
+    #textoEncriptado, #textoDesencriptado{
+        width: 85%;
+        font-size: 40px;
+        height: 40%;
+    }
+
+    #textoDesencriptado{
+        margin-top: 10%;
+    }
+
+    .botones{
+        display: flex;
+        font-size: 30px;
+        margin: 20% 0 0 -85px;
+    }
+}
